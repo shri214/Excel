@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+/* font-family: 'Merriweather', serif;
+font-family: 'Oswald', sans-serif; */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  overflow-x: auto;
+  background-color: #ecf0f1;
+}
+
+th,
+td {
+  border: 1px solid #333;
+  width: 60px;
+  max-width: 180px;
+  height: 15px;
+}
+
+td:focus {
+  outline: none;
+}
+.heading {
+  height: 25px;
+  margin: 0;
+  font-family: "Merriweather";
+}
+
+.table-heading-row {
+  position: sticky;
+  top: 103px;
+}
+#my-table-footer {
+  position: sticky;
+  bottom: 0px;
+  background-color: #ecf0f1;
+}
+.footer-row th {
+  border: none;
+  cursor: pointer;
+}
+/* Navigation bar */
+#navigation {
+  position: sticky;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: green;
+  padding: 5px 0px 0px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  color: white;
+}
+
+#navigation ul {
+  display: flex;
+  list-style: none;
+  font-size: 1.5rem;
+  margin: 5px;
+}
+#navigation ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  margin: 0px 5px;
+}
+
+.home {
+  background-color: #ecf0f1;
+  align-self: flex-end;
+  color: black !important;
+}
+
+/* navbar */
+
+#navbar {
+  display: flex;
+  padding: 5px;
+  background-color: #ecf0f1;
+  align-items: center;
+  position: sticky;
+  top: 42px;
+}
+#navbar div {
+  margin: 0px 8px;
+}
+#bolds,
+#itallics,
+#underlines {
+  padding: 2px 4px;
+}
+
+.home:focus {
+  background-color: red;
+}
+
+#text-color,
+#bg-color {
+  height: 10px;
+  width: 20px;
+  position: absolute;
+  left: -4px;
+  bottom: -8px;
+}
+#colours {
+  position: relative;
+}
+
+.table-heading-row :first-child {
+  background-color: gray;
+  user-select: none;
+}
+
+#AddNew {
+  cursor: pointer;
+}
+
+/* navbar 2 */
+#navbar2 {
+  background-color: #ecf0f1;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 80px;
+}
+.noOfShell {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 2px 15px;
+  background-color: white;
+}
+#navbar2 > label {
+  font-family: sans-serif;
+  margin-right: 10px;
+}
+#formula {
+  width: 50%;
+}
+#formula:focus {
+  outline: none;
+}

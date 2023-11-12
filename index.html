@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excel Sheets</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script defer src="excel.js"></script>
+  </head>
+  <body>
+    <nav id="navigation">
+      <ul>
+        <li class="list"><a href="#">File</a></li>
+        <li class="list"><a href="#" class="home">Home</a></li>
+        <li class="list"><a href="#">Insert</a></li>
+        <li class="list"><a href="#">Layout</a></li>
+        <li class="list"><a href="#">Help</a></li>
+      </ul>
+      <h2 class="heading"></h2>
+    </nav>
+    <nav id="navbar">
+      <div><span class="material-icons" id="copy"> content_copy </span></div>
+      <div><span class="material-icons" id="cut"> content_cut </span></div>
+      <div><span class="material-icons" id="paste"> content_paste </span></div>
+      <div>
+        <select id="fontSelect">
+          <option value="MonoSpace">MonoSpace</option>
+          <option value="Sans-serif">sans-serif</option>
+          <option value="Fantasy">Fantasy</option>
+          <option value="Cursive">Cursive</option>
+          <option value="Merriweather">Merriweather</option>
+          <option value="Oswald">Oswald</option>
+        </select>
+      </div>
+      <div>
+        <select id="fontSize">
+          <option value="14px">14</option>
+          <option value="16px">16</option>
+          <option value="18px">18</option>
+          <option value="20px">20</option>
+          <option value="22px">22</option>
+          <option value="24px">24</option>
+        </select>
+      </div>
+
+      <button id="bolds">B</button>
+
+      <div>
+        <button id="itallics">I</button>
+      </div>
+      <div>
+        <button id="underlines">U</button>
+      </div>
+      <div>
+        <span class="material-icons" id="left"> format_align_left </span>
+      </div>
+      <div>
+        <span class="material-icons" id="centre"> format_align_center </span>
+      </div>
+      <div>
+        <span class="material-icons" id="right"> format_align_right </span>
+      </div>
+      <div id="colours">
+        <label for="text-color">A</label>
+        <input type="color" id="text-color" />
+      </div>
+      <div id="colours">
+        <label for="bg-color">Bg</label>
+        <input type="color" id="bg-color" />
+      </div>
+      <div>
+        <span class="material-icons" onclick="downloadJson()">
+          cloud_download
+        </span>
+      </div>
+      <div><input type="file" id="jsonFile" accept=".json" /></div>
+    </nav>
+    <nav id="navbar2">
+      <span class="noOfShell">No Shell</span>
+      <label for="formula">fx</label>
+      <input type="text" id="formula" />
+    </nav>
+    <!-- <input type="color" /> -->
+    <table id="my-table">
+      <thead id="my-table-head">
+        <tr class="table-heading-row">
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="my-table-body"></tbody>
+      <tfoot id="my-table-footer">
+        <tr class="footer-row">
+          <th id="AddNew">
+            <span class="material-icons add-sheet-btn"> note_add </span>
+          </th>
+          <th class="addPage">Sheets1</th>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
